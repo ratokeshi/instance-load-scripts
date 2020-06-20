@@ -3,7 +3,7 @@
 # Currently only way to set path. todo- set parameter and use yaml
 {
 curl_path="http://mbiii.r4t.net"
-delay_span=3000
+delay_span=120
 curl_range=2000
 
 #Create first random field - script delay
@@ -21,7 +21,7 @@ done
 #End of curl fork
 }&
 
-delay_span_stress=3000
+delay_span_stress=120
 stress_range_cpu=16
 stress_range_io=16
 stress_range_vm=16
