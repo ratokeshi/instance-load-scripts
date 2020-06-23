@@ -8,6 +8,7 @@ curl_path_east_admin="http://east.r4t.net/wp-admin"
 curl_path_west_admin="http://west.r4t.net/wp-admin"
 curl_path_east="http://east.r4t.net"
 curl_path_west="http://west.r4t.net"
+curl_path_attack="http://west.r4t.net/?s=String+userLoginQuery+%3D+++%22SELECT+user_id%2C+username%2C+password_hash+FROM+users+WHERE+username+%3D+%27%22+++%2B+request.getParameter%28%22user%22%29+%2B+%22%27%22%3B"
 delay_span=120
 curl_range=2000
 
@@ -27,6 +28,7 @@ for i in {1..$curl_count}
  curl $curl_path_west_admin
  curl $curl_path_east
  curl $curl_path_west
+ curl $cur_path_attack
 done
 #End of curl fork
 }&
