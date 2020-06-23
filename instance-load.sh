@@ -3,6 +3,11 @@
 # Currently only way to set path. todo- set parameter and use yaml
 {
 curl_path="http://mbiii.r4t.net"
+curl_path_admin="http://mbiii.r4t.net/wp-admin"
+curl_path_east_admin="http://east.r4t.net/wp-admin"
+curl_path_west_admin="http://west.r4t.net/wp-admin"
+curl_path_east="http://east.r4t.net"
+curl_path_west="http://west.r4t.net"
 delay_span=120
 curl_range=2000
 
@@ -17,6 +22,11 @@ echo "Curl count is: " $curl_count
 for i in {1..$curl_count}
  do
  curl $curl_path
+ curl $curl_path_admin
+ curl $curl_path_east_admin
+ curl $curl_path_west_admin
+ curl $curl_path_east
+ curl $curl_path_west
 done
 #End of curl fork
 }&
