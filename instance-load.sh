@@ -17,7 +17,7 @@ curl_path_attack_nova="http://nova.r4t.net/?s=String+userLoginQuery+%3D+++%22SEL
 
 
 delay_span=120
-curl_range=2000
+curl_range=10
 
 #Create first random field - script delay
 echo "Delay span is: " $delay_span
@@ -45,13 +45,13 @@ done
 #End of curl fork
 }&
 
-delay_span_stress=120
-stress_range_cpu=16
-stress_range_io=16
-stress_range_vm=16
-stress_range_fork=16
-stress_range_copyfile=500
-stress_range_timeout=60
+delay_span_stress=5
+stress_range_cpu=1
+stress_range_io=1
+stress_range_vm=1
+stress_range_fork=1
+stress_range_copyfile=100
+stress_range_timeout=600
 #Create first random field - script delay
 echo "Stress Delay span is: " $delay_span_stress
 stress_script_delay=$(($RANDOM % $delay_span_stress))
