@@ -5,15 +5,15 @@
 curl_path="http://nova.r4t.net"
 curl_path_admin="http://nova.r4t.net/wp-admin"
 curl_path_east_admin="http://nova.r4t.net/wp-admin"
-curl_path_west_admin="http://nova.r4t.net/wp-admin"
-curl_path_nova_admin="http://nova.r4t.net/wp-admin"
+curl_path_west_admin="http://elb-wp-alb-gan-1057669595.us-east-1.elb.amazonaws.com/2020/06/29/generic-server-info/"
+curl_path_nova_admin="http://elb-wp-alb-gan-1057669595.us-east-1.elb.amazonaws.com/2020/06/29/generic-server-info/"
 curl_path_east="http://nova.r4t.net"
-curl_path_west="http://nova.r4t.net"
-curl_path_nova="http://nova.r4t.net"
+curl_path_west="http://elb-wp-alb-gan-1057669595.us-east-1.elb.amazonaws.com/2020/06/29/generic-server-info/"
+curl_path_nova="http://elb-wp-alb-gan-1057669595.us-east-1.elb.amazonaws.com/2020/06/29/generic-server-info/"
 curl_path_attack="http://nova.r4t.net/?s=String+userLoginQuery+%3D+++%22SELECT+user_id%2C+username%2C+password_hash+FROM+users+WHERE+username+%3D+%27%22+++%2B+request.getParameter%28%22user%22%29+%2B+%22%27%22%3B"
-curl_path_attack_east="http://nova.r4t.net/?s=String+userLoginQuery+%3D+++%22SELECT+user_id%2C+username%2C+password_hash+FROM+users+WHERE+username+%3D+%27%22+++%2B+request.getParameter%28%22user%22%29+%2B+%22%27%22%3B"
-curl_path_attack_west="http://nova.r4t.net/?s=String+userLoginQuery+%3D+++%22SELECT+user_id%2C+username%2C+password_hash+FROM+users+WHERE+username+%3D+%27%22+++%2B+request.getParameter%28%22user%22%29+%2B+%22%27%22%3B"
-curl_path_attack_nova="http://nova.r4t.net/?s=String+userLoginQuery+%3D+++%22SELECT+user_id%2C+username%2C+password_hash+FROM+users+WHERE+username+%3D+%27%22+++%2B+request.getParameter%28%22user%22%29+%2B+%22%27%22%3B"
+curl_path_attack_east="http://elb-wp-alb-gan-1057669595.us-east-1.elb.amazonaws.com/2020/06/29/generic-server-info/"
+curl_path_attack_west="http://elb-wp-alb-gan-1057669595.us-east-1.elb.amazonaws.com/2020/06/29/generic-server-info/"
+curl_path_attack_nova="http://elb-wp-alb-gan-1057669595.us-east-1.elb.amazonaws.com/2020/06/29/generic-server-info/"
 
 
 delay_span=120
